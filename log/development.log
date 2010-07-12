@@ -1,0 +1,2090 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (172.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20100709190917)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "age" integer, "active" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100709190917')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+
+
+Processing PeopleController#index (for 127.0.0.1 at 2010-07-09 14:09:53) [GET]
+  [4;36;1mPerson Load (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendering template within layouts/people
+Rendering people/index
+Completed in 1265ms (View: 1265, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2010-07-09 14:09:58) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people/new]
+
+
+Processing PeopleController#new (for 127.0.0.1 at 2010-07-09 14:13:41) [GET]
+Rendering template within layouts/people
+Rendering people/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/people/new]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:13:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:18:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:18:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:18:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:20:55) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:21:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:26:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:26:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:26:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:27:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:27:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:33:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:33:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 219ms (View: 172, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:35:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:37:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:37:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:38:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:39:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:40:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:41:22) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 250ms (View: 188, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:43:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:43:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:48:25) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:48:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:49:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+
+
+Processing PeopleController#create (for 127.0.0.1 at 2010-07-09 14:50:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k=", "person"=>{"name"=>"", "age"=>"", "active"=>"0"}}
+Rendering template within layouts/people
+Rendering people/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/people]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20100709190917)
+Migrating to CreateHardwares (20100709201854)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "hardwares" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "size" integer, "forsale" boolean, "quantity" integer, "instock" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100709201854')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("hardwares")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:21:18) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 156ms (View: 156, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#new (for 127.0.0.1 at 2010-07-09 15:21:22) [GET]
+Rendering template within layouts/hardwares
+Rendering hardwares/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/hardwares/new]
+
+
+Processing HardwaresController#create (for 127.0.0.1 at 2010-07-09 15:21:26) [POST]
+  Parameters: {"hardware"=>{"name"=>"1", "size"=>"1", "quantity"=>"1", "forsale"=>"0", "instock"=>"0"}, "commit"=>"Create", "authenticity_token"=>"pnTxToxOOUMuBvsNiNXJQbAbiEO3jtZLaAEpykrkM6k="}
+  [4;35;1mHardware Create (15.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES('1', 1, '2010-07-09 20:21:26', 1, 'f', 'f', '2010-07-09 20:21:26')[0m
+Redirected to http://localhost:3000/hardwares/1
+Completed in 219ms (DB: 15) | 302 Found [http://localhost/hardwares]
+
+
+Processing HardwaresController#show (for 127.0.0.1 at 2010-07-09 15:21:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" WHERE ("hardwares"."id" = 1) [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/hardwares/1]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:26:17) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:26:19) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/hardwares]
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(1, 1, '2010-07-09 20:29:08', 1, 't', 't', '2010-07-09 20:29:08')[0m
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:29:16) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/hardwares]
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(1, 1, '2010-07-09 20:29:39', 1, 't', 't', '2010-07-09 20:29:39')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(2, 2, '2010-07-09 20:29:39', 2, 't', 't', '2010-07-09 20:29:39')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(3, 3, '2010-07-09 20:29:39', 3, 't', 't', '2010-07-09 20:29:39')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(4, 4, '2010-07-09 20:29:39', 4, 't', 't', '2010-07-09 20:29:39')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(5, 5, '2010-07-09 20:29:40', 5, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;36;1mHardware Create (15.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(6, 6, '2010-07-09 20:29:40', 6, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(7, 7, '2010-07-09 20:29:40', 7, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(8, 8, '2010-07-09 20:29:40', 8, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(9, 9, '2010-07-09 20:29:40', 9, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(10, 10, '2010-07-09 20:29:40', 10, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(11, 11, '2010-07-09 20:29:40', 11, 't', 't', '2010-07-09 20:29:40')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(12, 12, '2010-07-09 20:29:41', 12, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(13, 13, '2010-07-09 20:29:41', 13, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(14, 14, '2010-07-09 20:29:41', 14, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(15, 15, '2010-07-09 20:29:41', 15, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(16, 16, '2010-07-09 20:29:41', 16, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(17, 17, '2010-07-09 20:29:41', 17, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(18, 18, '2010-07-09 20:29:41', 18, 't', 't', '2010-07-09 20:29:41')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(19, 19, '2010-07-09 20:29:42', 19, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(20, 20, '2010-07-09 20:29:42', 20, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(21, 21, '2010-07-09 20:29:42', 21, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(22, 22, '2010-07-09 20:29:42', 22, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(23, 23, '2010-07-09 20:29:42', 23, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(24, 24, '2010-07-09 20:29:42', 24, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(25, 25, '2010-07-09 20:29:42', 25, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;36;1mHardware Create (15.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(26, 26, '2010-07-09 20:29:42', 26, 't', 't', '2010-07-09 20:29:42')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(27, 27, '2010-07-09 20:29:43', 27, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(28, 28, '2010-07-09 20:29:43', 28, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(29, 29, '2010-07-09 20:29:43', 29, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(30, 30, '2010-07-09 20:29:43', 30, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(31, 31, '2010-07-09 20:29:43', 31, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(32, 32, '2010-07-09 20:29:43', 32, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(33, 33, '2010-07-09 20:29:43', 33, 't', 't', '2010-07-09 20:29:43')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(34, 34, '2010-07-09 20:29:44', 34, 't', 't', '2010-07-09 20:29:44')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(35, 35, '2010-07-09 20:29:44', 35, 't', 't', '2010-07-09 20:29:44')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(36, 36, '2010-07-09 20:29:44', 36, 't', 't', '2010-07-09 20:29:44')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(37, 37, '2010-07-09 20:29:44', 37, 't', 't', '2010-07-09 20:29:44')[0m
+  [4;36;1mHardware Create (16.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(38, 38, '2010-07-09 20:29:44', 38, 't', 't', '2010-07-09 20:29:44')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(39, 39, '2010-07-09 20:29:44', 39, 't', 't', '2010-07-09 20:29:44')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(40, 40, '2010-07-09 20:29:45', 40, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(41, 41, '2010-07-09 20:29:45', 41, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(42, 42, '2010-07-09 20:29:45', 42, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(43, 43, '2010-07-09 20:29:45', 43, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(44, 44, '2010-07-09 20:29:45', 44, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(45, 45, '2010-07-09 20:29:45', 45, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(46, 46, '2010-07-09 20:29:45', 46, 't', 't', '2010-07-09 20:29:45')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(47, 47, '2010-07-09 20:29:46', 47, 't', 't', '2010-07-09 20:29:46')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(48, 48, '2010-07-09 20:29:46', 48, 't', 't', '2010-07-09 20:29:46')[0m
+  [4;35;1mHardware Create (0.0ms)[0m   [0mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(49, 49, '2010-07-09 20:29:46', 49, 't', 't', '2010-07-09 20:29:46')[0m
+  [4;36;1mHardware Create (0.0ms)[0m   [0;1mINSERT INTO "hardwares" ("name", "size", "updated_at", "quantity", "forsale", "instock", "created_at") VALUES(50, 50, '2010-07-09 20:29:46', 50, 't', 't', '2010-07-09 20:29:46')[0m
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:30:17) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 422ms (View: 406, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:33:49) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 266ms (View: 250, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:35:35) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 265ms (View: 218, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:35:37) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 610ms (View: 594, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:35:43) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 344ms (View: 312, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:36:59) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 281ms (View: 265, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:37:01) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 422ms (View: 391, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:37:03) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 672ms (View: 641, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:38:15) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 281ms (View: 250, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:38:16) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 453ms (View: 422, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:38:21) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 406ms (View: 375, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:38:36) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 297ms (View: 266, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:38:38) [GET]
+  [4;36;1mHardware Load (157.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 407ms (View: 235, DB: 157) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:39:14) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 594ms (View: 578, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:39:16) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 282ms (View: 266, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:39:42) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 265ms (View: 250, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:42:40) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 406ms (View: 375, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:42:53) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 641ms (View: 625, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:43:25) [GET]
+  [4;36;1mHardware Load (15.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 250ms (View: 235, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:43:29) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 328ms (View: 296, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:43:37) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 453ms (View: 437, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:45:03) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 266ms (View: 250, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:45:21) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 297ms (View: 281, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#show (for 127.0.0.1 at 2010-07-09 15:45:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" WHERE ("hardwares"."id" = 1) [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/hardwares/1]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:45:32) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 422ms (View: 406, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:45:55) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 594ms (View: 563, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:46:20) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 313ms (View: 297, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:46:25) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 266ms (View: 250, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:46:41) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 422ms (View: 406, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:46:47) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 562ms (View: 546, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:47:17) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 296ms (View: 265, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:47:38) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 297ms (View: 282, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:48:57) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 421ms (View: 390, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:50:11) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 657ms (View: 625, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:50:24) [GET]
+  [4;36;1mHardware Load (15.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 312ms (View: 297, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:52:48) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 297ms (View: 266, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:53:04) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 453ms (View: 422, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:53:11) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 672ms (View: 641, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:53:14) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 297ms (View: 266, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:53:44) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 454ms (View: 266, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:55:47) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 63ms (View: 47, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:57:09) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 78ms (View: 46, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:57:15) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:57:58) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 187ms (View: 78, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:58:08) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 15:58:38) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:00:26) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "$(#{hardware.id}).toggle()" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:00:36) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "$(#{hardware.id.to_s}).toggle()" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:00:37) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "$(#{hardware.id.to_s}).toggle()" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:03:24) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle('#{hardware.id}')" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:03:26) [GET]
+  [4;36;1mHardware Load (15.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle('#{hardware.id}')" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:03:41) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle('#{1}')" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:04:03) [GET]
+  [4;36;1mHardware Load (15.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle('1')" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:04:04) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle('1')" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (281.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:04:09) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+ERROR: compiling _run_erb_app47views47hardwares47index46html46erb RAISED compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle('"1"')" ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                    ^
+Function body:           def _run_erb_app47views47hardwares47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hardwares</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @hardwares.each do |hardware| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"5\">"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle('"1"')" ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <tr style=\"display:none\" id="; @output_buffer.concat(( "\"#{hardware.id}\"" ).to_s); @output_buffer.concat ">      \n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.size ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.forsale ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.quantity ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.instock ).to_s); @output_buffer.concat "    \n"
+@output_buffer.concat "    </td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  \n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New hardware', new_hardware_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:31:in `compile!'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/AppWin32/rails_apps/example/app/controllers/hardwares_controller.rb:7:in `index'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle('"1"')" ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                    ^) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle('"1"')" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:31:in `compile!'
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:05:18) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+ERROR: compiling _run_erb_app47views47hardwares47index46html46erb RAISED compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle("1")" ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                   ^
+Function body:           def _run_erb_app47views47hardwares47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hardwares</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @hardwares.each do |hardware| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"5\">"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle("1")" ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <tr style=\"display:none\" id="; @output_buffer.concat(( "\"#{hardware.id}\"" ).to_s); @output_buffer.concat ">      \n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.size ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.forsale ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.quantity ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.instock ).to_s); @output_buffer.concat "    \n"
+@output_buffer.concat "    </td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  \n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New hardware', new_hardware_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:31:in `compile!'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/AppWin32/rails_apps/example/app/controllers/hardwares_controller.rb:7:in `index'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle("1")" ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                   ^) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle("1")" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:31:in `compile!'
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:05:19) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+ERROR: compiling _run_erb_app47views47hardwares47index46html46erb RAISED compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle("1")" ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                   ^
+Function body:           def _run_erb_app47views47hardwares47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hardwares</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @hardwares.each do |hardware| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"5\">"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle("1")" ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <tr style=\"display:none\" id="; @output_buffer.concat(( "\"#{hardware.id}\"" ).to_s); @output_buffer.concat ">      \n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.size ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.forsale ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.quantity ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.instock ).to_s); @output_buffer.concat "    \n"
+@output_buffer.concat "    </td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  \n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New hardware', new_hardware_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:31:in `compile!'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/AppWin32/rails_apps/example/app/controllers/hardwares_controller.rb:7:in `index'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_remote 'Show', "Element.toggle("1")" ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                   ^) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle("1")" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:31:in `compile!'
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:05:23) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle(1)" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:05:29) [GET]
+  [4;36;1mHardware Load (16.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "Element.toggle(1);" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:07:09) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_remote 'Show', "" %></td>
+12:   </tr>
+13: 
+14:   <tr style="display:none" id=<%= "\"#{hardware.id}\"" %>>      
+
+    app/views/hardwares/index.html.erb:11
+    app/views/hardwares/index.html.erb:8:in `each'
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:07:28) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:08:42) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+ERROR: compiling _run_erb_app47views47hardwares47index46html46erb RAISED compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected ')', expecting kEND
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_function "Show", "Element.toggle('#{hardware.id}") ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                            ^
+Function body:           def _run_erb_app47views47hardwares47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing hardwares</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Name</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @hardwares.each do |hardware| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td colspan=\"5\">"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_function "Show", "Element.toggle('#{hardware.id}") ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    \n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <tr style=\"display:none\" id="; @output_buffer.concat(( "\"#{hardware.id}\"" ).to_s); @output_buffer.concat ">      \n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h hardware.name ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.size ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.forsale ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.quantity ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((h hardware.instock ).to_s); @output_buffer.concat "    \n"
+@output_buffer.concat "    </td>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "  \n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New hardware', new_hardware_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:32:in `compile!'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/AppWin32/rails_apps/example/app/controllers/hardwares_controller.rb:7:in `index'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/AppWin32/ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/AppWin32/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/AppWin32/rails_apps/example/app/views/hardwares/index.html.erb:11: syntax error, unexpected ')', expecting kEND
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to_function "Show", "Element.toggle('#{hardware.id}") ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                            ^) on line #11 of app/views/hardwares/index.html.erb:
+8: <% @hardwares.each do |hardware| %>
+9:   <tr>
+10:     <td colspan="5"><%=h hardware.name %></td>
+11:     <td><%= link_to_function "Show", "Element.toggle('#{hardware.id}") %></td>
+12:     
+13:   </tr>
+14: 
+
+    app/views/hardwares/index.html.erb:32:in `compile!'
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (219.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:08:53) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/hardwares]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" LIMIT 1[0m
+  [4;36;1mHardware Destroy (0.0ms)[0m   [0;1mDELETE FROM "hardwares" WHERE "id" = 1[0m
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" LIMIT 1[0m
+  [4;36;1mHardware Destroy (0.0ms)[0m   [0;1mDELETE FROM "hardwares" WHERE "id" = 2[0m
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" LIMIT 1[0m
+  [4;36;1mHardware Destroy (0.0ms)[0m   [0;1mDELETE FROM "hardwares" WHERE "id" = 3[0m
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" LIMIT 1[0m
+  [4;36;1mHardware Destroy (16.0ms)[0m   [0;1mDELETE FROM "hardwares" WHERE "id" = 4[0m
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" LIMIT 1[0m
+  [4;36;1mHardware Destroy (0.0ms)[0m   [0;1mDELETE FROM "hardwares" WHERE "id" = 5[0m
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:09:27) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 62ms (View: 31, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:09:48) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 203ms (View: 188, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:10:31) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 63ms (View: 47, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:12:23) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:13:05) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 63ms (View: 47, DB: 16) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:13:43) [GET]
+  [4;36;1mHardware Load (15.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Completed in 62ms (View: 47, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:15:04) [GET]
+  [4;35;1mHardware Load (15.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Rendered hardwares/_hardware (16.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (15.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (16.0ms)
+Completed in 250ms (View: 235, DB: 15) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:15:25) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (15.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:16:09) [GET]
+  [4;35;1mHardware Load (16.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (undefined local variable or method `hardware' for #<ActionView::Base:0x46cd2bc>) on line #1 of app/views/hardwares/_hardware_hidden.html.erb:
+1:   <tr style="display:none" id=<%= "\"hardware_#{hardware.id}\"" %>>      
+2:     <td><%=h hardware.name %>
+3:     <%=h hardware.size %>
+4:     <%=h hardware.forsale %>
+
+    app/views/hardwares/_hardware_hidden.html.erb:1
+    app/views/hardwares/_hardware.html.erb:6
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (360.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:16:22) [GET]
+  [4;36;1mHardware Load (15.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+
+ActionView::TemplateError (undefined method `any?' for #<Hardware:0x4833f98>) in app/views/hardwares/_hardware_hidden.html.erb:
+
+    app/views/hardwares/_hardware.html.erb:6
+    app/views/hardwares/index.html.erb:8
+    app/controllers/hardwares_controller.rb:7:in `index'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/AppWin32/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (359.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:16:41) [GET]
+  [4;35;1mHardware Load (0.0ms)[0m   [0mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (16.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (15.0ms)
+Rendered hardwares/_hardware (15.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (16.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (16.0ms)
+Rendered hardwares/_hardware (16.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/hardwares]
+
+
+Processing HardwaresController#index (for 127.0.0.1 at 2010-07-09 16:17:31) [GET]
+  [4;36;1mHardware Load (0.0ms)[0m   [0;1mSELECT * FROM "hardwares" [0m
+Rendering template within layouts/hardwares
+Rendering hardwares/index
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (16.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (15.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (16.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Rendered hardwares/_hardware_hidden (0.0ms)
+Rendered hardwares/_hardware (0.0ms)
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/hardwares]

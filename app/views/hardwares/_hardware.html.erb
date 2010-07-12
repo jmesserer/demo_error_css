@@ -1,0 +1,6 @@
+  <tr>
+    <td colspan="5"><%=h hardware.name %>(<%=h hardware.id %>)</td>
+    <td><%= link_to_function "Show", "Element.toggle('hardware_#{hardware.id}')" %></td>    
+  </tr>
+
+  <%= render 'hardware_hidden', :hardware => hardware %>

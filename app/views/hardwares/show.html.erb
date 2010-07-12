@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @hardware.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @hardware.size %>
+</p>
+
+<p>
+  <b>Forsale:</b>
+  <%=h @hardware.forsale %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%=h @hardware.quantity %>
+</p>
+
+<p>
+  <b>Instock:</b>
+  <%=h @hardware.instock %>
+</p>
+
+
+<%= link_to 'Edit', edit_hardware_path(@hardware) %> |
+<%= link_to 'Back', hardwares_path %>

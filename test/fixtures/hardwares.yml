@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  size: 1
+  forsale: false
+  quantity: 1
+  instock: false
+
+two:
+  name: MyString
+  size: 1
+  forsale: false
+  quantity: 1
+  instock: false
